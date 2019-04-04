@@ -31,16 +31,16 @@
                   </v-container>
                 </v-img>
 
-                <v-card-actions>
+                <v-card-actions dark>
                   <v-spacer></v-spacer>
                   <v-btn icon>
-                    <v-icon>fas-fa-heart</v-icon>
+                    <v-icon>fas fa-heart</v-icon>
                   </v-btn>
                   <v-btn icon>
-                    <v-icon>fas-fa-bookmark</v-icon>
+                    <v-icon>fas fa-bookmark</v-icon>
                   </v-btn>
                   <v-btn icon>
-                    <v-icon>fas-fa-share-alt</v-icon>
+                    <v-icon>fas fa-share-alt</v-icon>
                   </v-btn>
                 </v-card-actions>
               </v-card>
@@ -57,9 +57,9 @@
     data: () => ({
       cards: [
         { title: 'Dream Big', src: require('../assets/img/adult-barbell-body-17840.jpg'), flex: 12 },
-        { title: 'Be Beautiful', src: require('../assets/img/pexels-photo-799420.jpeg'), flex: 6 },
-        { title: 'Work Hard', src: require('../assets/img/cross-2276772_1920.jpg'), flex: 6 },
-        { title: 'Share Your Reflections', src: require('../assets/img/Sports.jpg'), flex: 12 }
+        { title: 'Be Beautiful', src: require('../assets/img/pexels-photo-799420.jpeg'), flex: 12 },
+        { title: 'Work Hard', src: require('../assets/img/cross-2276772_1920.jpg'), flex: 12 },
+        { title: 'Share Your Reflections', src: require('../assets/img/ladyincity.jpeg'), flex: 12 }
       ]
     })
   }

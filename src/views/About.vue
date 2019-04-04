@@ -1,18 +1,35 @@
 <template>
-  <v-expansion-panel>
-    <v-expansion-panel-content
-      v-for="(item,i) in 5"
-      :key="i"
-    >
-      <div slot="header">
-        Item
-      </div>
-      <v-card>
-        <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
-      </v-card>
-      <v-card>
-        <v-card-text>Something new going to show up????????consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
-      </v-card>
-    </v-expansion-panel-content>
-  </v-expansion-panel>
+  <v-carousel hide-delimiters>
+    <v-carousel-item
+      v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+        reverse-transition="fade"
+        transition="fade"
+    ></v-carousel-item>
+  </v-carousel>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        items: [
+          {
+            src: require('../assets/img/Runner.jpg')
+          },
+          {
+            src: require('../assets/img/hearthand_y7s7k6.jpg')
+          },
+          {
+            src: require('../assets/img/active-adult-athlete-348487.jpg')
+          },
+          {
+            src: require('../assets/img/pexels-photo-460520.jpeg')
+          }
+        ]
+      }
+    }
+  }
+</script>
+

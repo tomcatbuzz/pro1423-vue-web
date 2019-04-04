@@ -5,7 +5,7 @@
       absolute
       color="primary"
       scroll-off-screen
-      scroll-target="#scrolling-techniques">
+      >
       <v-toolbar-side-icon class="hidden-sm-and-up" @click="drawer = !drawer" />
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">
@@ -27,7 +27,7 @@
         <v-btn flat router to="/services">
           <v-icon left>
             fas fa-code
-          </v-icon>Projects
+          </v-icon>Services
         </v-btn>
         <v-btn flat router to="/swiper">
           <v-icon left>
@@ -36,14 +36,11 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-    <div
-      id="scrolling-techniques"
-      class="scroll-y"
-      style="height: 1000px;">
-
     <v-content>
-      <v-container style="height: 100%;">
+      <v-container>
+      <transition name="fade">
         <router-view/>
+      </transition>
       </v-container>
       <v-fab-transition>
         <v-btn
@@ -64,7 +61,7 @@
         </v-btn>
       </v-fab-transition>
     </v-content>
-    </div>
+
     </div>
     <v-navigation-drawer v-model="drawer" app absolute temporary>
       <v-list>
@@ -130,3 +127,29 @@ export default {
   }
 }
 </script>
+
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+</style>

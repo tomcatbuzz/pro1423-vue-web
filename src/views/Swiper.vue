@@ -3,13 +3,13 @@
     <v-card class="swiper-inner">
       <!-- swiper -->
       <swiper :options="swiperOption">
-        <swiper-slide><v-img src="http://lorempixel.com/600/600/nature/1" /></swiper-slide>
-        <swiper-slide><v-img src="http://lorempixel.com/600/600/nature/2" /></swiper-slide>
-        <swiper-slide><v-img src="http://lorempixel.com/600/600/nature/3" /></swiper-slide>
-        <swiper-slide><v-img src="http://lorempixel.com/600/600/nature/4" /></swiper-slide>
-        <swiper-slide><v-img src="http://lorempixel.com/600/600/nature/5" /></swiper-slide>
-        <swiper-slide><v-img src="http://lorempixel.com/600/600/nature/6" /></swiper-slide>
-        <swiper-slide><v-img src="http://lorempixel.com/600/600/nature/7" /></swiper-slide>
+        <swiper-slide><v-img src="http://lorempixel.com/600/600/sports/1" /></swiper-slide>
+        <swiper-slide><v-img src="http://lorempixel.com/600/600/sports/2" /></swiper-slide>
+        <swiper-slide><v-img src="http://lorempixel.com/600/600/sports/3" /></swiper-slide>
+        <swiper-slide><v-img src="http://lorempixel.com/600/600/sports/8" /></swiper-slide>
+        <swiper-slide><v-img src="http://lorempixel.com/600/600/sports/5" /></swiper-slide>
+        <swiper-slide><v-img src="http://lorempixel.com/600/600/sports/6" /></swiper-slide>
+        <swiper-slide><v-img src="http://lorempixel.com/600/600/sports/7" /></swiper-slide>
         <div slot="pagination" class="swiper-pagination" />
       </swiper>
     </v-card>
